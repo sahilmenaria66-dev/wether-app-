@@ -195,3 +195,8 @@ body {
 .hide{
     display: hidden;
 }
+
+.city-buttons{
+    display: flex;
+    gap: 50px;
+}
