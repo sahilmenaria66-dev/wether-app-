@@ -1,0 +1,101 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <main class="weather-container">
+
+        <!-- Header -->
+        <header class="header-container">
+
+            <div class="search-bar">
+                <input
+                    type="text"
+                    class="search-city"
+                    value="London"
+                    placeholder="Search city"
+                    aria-label="City name"
+                >
+
+                <button class="londonButton" type="button">
+                    London
+                </button>
+
+                <button class="newyorkButton" type="button">
+                    New York
+                </button>
+            </div>
+
+            <button
+                class="reload-button"
+                type="button"
+                aria-label="Reload weather"
+            >
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+
+        </header>
+
+        <!-- Main Weather Section -->
+        <section class="main-container">
+
+            <div class="weather-icon">
+                <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+
+            <div class="temperature">
+
+                <h2 class="welcome">Welcome to Weather App</h2>
+
+                <div class="temperature-number"></div>
+
+                <p class="temperature-condition"></p>
+
+                <p class="weather-location"></p>
+
+            </div>
+
+        </section>
+
+        <!-- Weather Details -->
+        <section class="weather-details">
+
+            <article class="detail-card">
+                <i class="fa-solid fa-wind detail-icon"></i>
+                <p class="detail-label">Wind Speed</p>
+                <p class="detail-value detail-value1"></p>
+            </article>
+
+            <article class="detail-card">
+                <i class="fa-solid fa-temperature-half detail-icon"></i>
+                <p class="detail-label">Feels Like</p>
+                <p class="detail-value detail-value3"></p>
+            </article>
+
+            <article class="detail-card">
+                <i class="fa-solid fa-droplet detail-icon"></i>
+                <p class="detail-label">Humidity</p>
+                <p class="detail-value detail-value2"></p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
+```

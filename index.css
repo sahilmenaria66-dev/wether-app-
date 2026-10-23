@@ -1,0 +1,197 @@
+
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Complete page */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    background: #eef4fb;
+    color: #172b4d;
+}
+
+/* Main weather card */
+.weather-container {
+    width: 100%;
+    max-width: 430px;
+    padding: 24px;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 16px 45px rgba(29, 57, 90, 0.12);
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* Search bar */
+.search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 16px;
+    border-radius: 14px;
+    background: #f2f6fb;
+    color: #526783;
+    justify-content: center;
+}
+
+.londonButton {
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    border: none;
+    background-color: #f2f6fb;
+    border-radius: 10px;
+    
+}
+
+.newyorkButton{
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    border: none;
+    background-color: #f2f6fb;
+    border-radius: 10px;
+}
+
+.newyorkButton:hover{
+    cursor: pointer;
+}
+
+.londonButton:hover{
+    cursor: pointer;
+}
+
+/* Reload button */
+.reload-button {
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 14px;
+    background: #e8f1ff;
+    color: #2563eb;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.reload-button:hover {
+    background: #d8e7ff;
+}
+
+/* Main weather section */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 34px 0 30px;
+}
+
+/* Weather icon */
+.weather-icon {
+    color: #f6b91a;
+    font-size: 76px;
+    margin-bottom: 16px;
+}
+
+/* Temperature */
+.temperature-number {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.temperature-condition {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.weather-location {
+    margin-top: 7px;
+    color: #8190a5;
+    font-size: 14px;
+}
+
+/* Wind, humidity and rain cards */
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.detail-card {
+    min-width: 0;
+    padding: 16px 8px;
+    text-align: center;
+    border-radius: 16px;
+    background: #f5f8fc;
+}
+
+.detail-icon {
+    color: #3975d5;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.detail-label {
+    min-height: 32px;
+    color: #8190a5;
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.detail-value {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Mobile responsive */
+@media (max-width: 360px) {
+    body {
+        padding: 12px;
+    }
+
+    .weather-container {
+        padding: 16px;
+    }
+
+    .weather-details {
+        gap: 6px;
+    }
+
+    .detail-card {
+        padding: 13px 4px;
+    }
+
+    .temperature-number {
+        font-size: 56px;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.hide{
+    display: hidden;
+}
